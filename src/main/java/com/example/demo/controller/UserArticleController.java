@@ -41,7 +41,7 @@ public class UserArticleController {
 	
 	@Autowired
 	private BoardService boardService;
-
+	
 	@Autowired
 	private ReactionPointService reactionPointService;
 

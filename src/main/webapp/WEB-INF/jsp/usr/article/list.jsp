@@ -8,7 +8,8 @@
 	<div class="mx-auto">
 	
 	<%-- ${articles } --%>
-
+		<div>${board.name }</div>
+		<br />
 		<div class="mb-4 flex">
 			<div>${articlesCount }개</div>
 			<div class="flex-grow"></div>
