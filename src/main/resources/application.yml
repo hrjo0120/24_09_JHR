@@ -1,0 +1,37 @@
+server:
+  port: 8080
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: hrjo0120@gmail.com
+#    password: 구글 계정 앱 비밀번호
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+      multipart:
+        max-file-size: 100MB
+        max-request-size: 100MB
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/24_08_Spring?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    username: root
+    password: 
+mybatis:
+  type-aliases-package: com.example.demo.vo
+
+custom:
+  siteName: 24_08_Spring
+  siteMainUri: http://localhost:8080
+  emailFrom: no-reply@localhost
+  emailFromName: 24_08_Spring 
+  genFileDirPath: C:\work_jhr\sts-4.24.0.RELEASE-workspace\demo\images
