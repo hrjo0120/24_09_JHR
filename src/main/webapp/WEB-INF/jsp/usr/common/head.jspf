@@ -65,6 +65,7 @@
 						<span>🌞</span> <span>🌚</span>
 				</a></li>
 				<li><a class="hover:underline" href="/">HOME</a></li>
+				<li><a class="hover:underline" href="../home/weather">WEATHER</a></li>
 				<li>
 					<div class="dropdown dropdown-hover">
 						<div tabindex="0" role="button">
